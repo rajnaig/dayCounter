@@ -17,10 +17,7 @@ szeptember_első = datetime(ma.year, 9, 1)
 if ma > szeptember_első:
     szeptember_első = datetime(ma.year + 1, 9, 1)
 napok_szeptemberig = (szeptember_első - ma).days
-st.write(f"Még {napok_szeptemberig} nap van hátra szeptemberig.")
-
-# Egyszerű üzenet
-st.write(f"Eddig {eltelt_napok} napot töltöttünk együtt, és már csak {napok_szeptemberig} nap van hátra a közös otthonunkig.")
+st.write(f"Már csak {napok_szeptemberig} nap van hátra szeptemberig.")
 
 # Kép feltöltése
 st.image('randomimage.jpeg')
